@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+    <children>
+        <Label fx:id="idLabel1" minWidth="100.0" onMouseEntered="#onMouseEntredInLabel1" onMouseExited="#onMouseExitedInLabel1" text="Label 1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label fx:id="idLabel2" minWidth="100.0" onMouseEntered="#onMouseEntredInLabel2" onMouseExited="#onMouseExitedInLabel2" text="Label 2" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      <PasswordField fx:id="idPassword" onKeyTyped="#onKeyPressed" />
+      <Button fx:id="idBotonBorrarTodo" mnemonicParsing="false" onMousePressed="#onBotonPulsado" onMouseReleased="#onBotonSoltado" prefHeight="25.0" prefWidth="104.0" text="Button" GridPane.rowIndex="1" />
+    </children>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
